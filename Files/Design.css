@@ -1,0 +1,429 @@
+/* Sets all elements have these CSS properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Adds box-shadow to Header, Main, Footer */
+.shadow {
+    box-shadow: 0px 0px 20px rgba(25, 25, 25, 0.1);
+}
+
+.d-grid {
+    display: grid;
+    background-attachment: fixed;
+}
+
+.row-2 {
+grid-template-columns: 1fr 1fr;
+}
+
+.row-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-bold {
+    font-weight: 480;
+}
+
+.gin-10px {
+    margin: 10px;
+}
+
+.gin-20px {
+    margin: 20px;
+}
+
+.pad-10px {
+    padding: 10px;
+}
+
+#text-white {
+    color: white;
+}
+
+#gold-2 {
+    color: rgb(255, 185, 0);
+}
+/* END OF UNIVERSAL SELECTORS SECTION */
+
+
+/* ! HEADER SECTION ! */
+
+/* Header Background */
+#header {
+    height: 80px;
+    background: #cccccc;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Makes sure the header is on top */
+}
+
+/* Styles the Logo */
+#header img {
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    top: 8px;
+    left: 2%
+}
+
+#logoname {
+    position: absolute;
+    top: 28px;
+    left: 7%;
+    color: black;
+    font-size:  18px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+/* Styles the Menu Bar */
+#header ul {
+    float: right;
+    margin-right: 3%;
+}
+
+#header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+#header ul li a {
+    position: relative;
+    color: black;
+    font-size:  16px;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+#header ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, black, #ffb900);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 500ms;
+}
+
+#header ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Styles the Menu bar for media query */
+#btn, #cancel {
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Input Checkbox Hidden for Menu Bar */
+#check {
+    display: none;
+}
+
+/* ! END OF HEADER SECTION ! */
+
+/* ! START HOME-MAIN SECTION ! */
+
+
+/* landing page */
+.landing-page {
+    position: relative;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-com {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#home-logo {
+    margin-top: 10px;
+    width: 10%;
+    height: auto;
+}
+
+.mission {
+    margin-top: 25px;
+    padding: 80px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    transition: transform 500ms, color 500ms;
+    font-family: Arial;
+}
+
+.mission:hover {
+    transform: translateY(-20px);
+    color: rgb(255, 200, 0);
+}
+
+.vision {
+    margin-top: 25px;
+    padding: 80px;
+    color: black;
+    background-color: rgb(255, 215, 0);
+    text-align: center;
+    transition: transform 500ms, background-color 500ms;
+    font-family: Arial;
+}
+
+.vision:hover {
+    transform: translateY(-20px);
+    background-color: rgb(255, 185, 0);
+}
+
+/* project cards */
+.project{
+    position: relative;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.project-title {
+    font-size: 35px;
+    font-weight: 499;
+}
+
+.col {
+    padding: 20px;
+}
+
+/* card #1 and #3 */
+.card1 {
+    border-radius: 30px;
+    background-color: white;
+}
+.card1 > .card-header1 {
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.card1 > .card-body1 {
+    padding: 20px;
+}
+.card-body1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-body1 img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.hoverable-y1 {
+    transition-duration: 500ms;
+}
+.hoverable-y1:hover {
+    transform: translateY(-10px);
+}
+
+.project-name1 {
+    transition-duration: 500ms;
+}
+.project-name1:hover {
+    color: rgb(241, 178, 2);
+}
+
+
+/* card #2 and #4 */
+.card2 {
+    border-radius: 30px;
+    background-color: white;
+}
+.card2 > .card-header2 {
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+    background-color: rgb(255, 185, 0);
+    color: white;
+}
+.card2 > .card-body2 {
+    padding: 20px;
+}
+.card-body2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-body2 img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.hoverable-y2 {
+    transition-duration: 500ms;
+}
+.hoverable-y2:hover {
+    transform: translateY(-10px);
+}
+
+.project-name2 {
+    transition-duration: 500ms;
+}
+.project-name2:hover {
+    color: rgb(0, 0, 0);
+}
+
+.card-a {
+    text-decoration: none;
+}
+
+.card-a > img {
+    margin-left: 10px;
+}
+
+/* ! END OF HOME-MAIN SECTION ! */
+
+/* ! START OF MAIN-PROJECTS SECTION */
+    
+/* CSS for the showcase section */
+#showcase {
+    text-align: center;
+    padding: 0 1em; /* Adds padding to the left and right */
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em; /* Adds gap between the images */
+    margin: 1em 0;
+}
+
+.showcase-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CSS for the spacing between sections */
+.spacing {
+    height: 2em;
+}
+
+/* Style for the project description section */
+#description {
+    padding: 4px;
+    background-color:white;
+    border-radius: 8px;
+}
+
+.project-description {
+    transition-duration: 500ms;
+}
+
+.project-description p {
+    line-height: 28px;
+}
+
+.project-description:hover {
+    transform: translateY(-15px);
+}
+
+/* For Development Page */
+.go-backbutton {
+    width: 10%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.go-backbutton:hover {
+    background-color: rgb(255, 185, 0);
+}
+
+/* For Projects Page*/
+.go-backbutton2 {
+    width: 13%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.go-backbutton2:hover {
+    background-color: rgb(255, 185, 0);
+}
+
+/* ! END OF MAIN-PROJECTS SECTION */
+
+/* ! START OF FOOTER SECTION ! */
+
+/* Properly Aligns and Styles the Footer */
+.ftr-name {
+    color: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ftr-name a {
+    text-decoration: none;
+}
+
+.ftr-com {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#footer {
+    padding: 30px;
+    text-align: center;
+}
+
+/* ! END OF FOOTER SECTION ! */

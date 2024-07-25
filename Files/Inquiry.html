@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry</title>
+    <link rel="stylesheet" href="Design.css">
+    <link rel="stylesheet" href="Design2.css">
+</head>
+<body>
+
+    <!--Header  -->
+
+    <nav id="header">
+
+        <!-- menu bar for media query -->
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+        </label>
+        
+        <!-- Logo picture and company name -->
+        <a href="index.html"><img src="Logo.png" alt="JFL Construction Logo"></a> <p id="logoname">JFL Construction</p>
+    
+        <!-- Links -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Inquiry.html">Inquiry</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <!-- End of Header -->
+
+    <main id="inquiry-main" class="shadow">
+
+        <section class="inquiry-form-section">
+            <h1>Contact Us</h1>
+            <p>We're here to help and answer any question you might have.
+             We look forward to hearing from you. (please note that this form does
+            not yet work, refer to the contact details below, Thank you!)</p>
+
+            <form class="inquiry-form" id="contact-form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+    
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+    
+                <button type="submit" id="buttonn">Submit</button>
+
+            </form>
+        </section>
+    
+        <section class="inquiry-details-section">
+
+            <h2>Our Contact Details</h2>
+            <p>You can also reach us at:</p>
+
+            <ul>
+                <li><strong>Email:</strong> JFLConstruction.24@gmail.com</li>
+                <li><strong>Phone:</strong> (0916) 341 6017</li>
+                <li><strong>Facebook:</strong> Facebook.com/jig.legaspi</li>
+                <li><strong>Address:</strong> Blk 40 Lot 14 Valenza Str. Pallas Athena Classique, Imus City, Cavite 4103</li>
+            </ul>
+            
+        </section>
+
+    </main>
+    
+
+
+    <footer id="footer" class="shadow">
+        <div class="d-grid row-2">
+            <div>
+                Designed by <span class="ftr-name">Ychicko Frian Legaspi</span>
+            </div>
+            <div>
+                Copyright &copy; <span class="ftr-com">Julius Frian Legaspi Construction</span> 2022
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6f88a0781f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
